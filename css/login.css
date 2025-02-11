@@ -1,0 +1,159 @@
+/* link google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* #0BAABB --> primar color */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #C3E9ED;
+    font-family: "Poppins", serif;
+}
+
+.ctr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-cont {
+    width: 70rem;
+    height: 28rem;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    /* animation: formAni .5s ease-in-out 1; */
+    animation: formAni 0.7s cubic-bezier(0.34, 1.61, 0.7, 1) 0s forwards;
+}
+
+.lhs {
+    width: 60%;
+    height: 100%;
+}
+
+.log-img {
+    transform: translateY(-1rem);
+    height: 110%;
+}
+
+.rhs {
+    width: 31%;
+    margin-left: 4.5%;
+    height: 100%;
+}
+
+form {
+    height: 23rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 1rem;
+    box-shadow: 0 0 15px #0000001b;
+}
+
+.logo-row {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 9rem;
+    transform: translateY(-.7rem);
+}
+
+.name-logo {
+    transform: translateX(-2rem);
+    margin-top: 1.3rem;
+    color: #2d465e;
+}
+
+h4 {
+    color: #2d465e;
+}
+
+.input-row {
+    width: 100%;
+    height: 3rem;
+    background: #EEF7F9;
+    border-radius: 8px;
+    border-left: 5px solid #0BAABB;
+    cursor: pointer;
+}
+
+.ico {
+    width: 2.5rem;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #0BAABB;
+    margin-right: 5px;
+}
+
+.ttl-row {
+    width: 265px;
+    height: 100%;
+}
+
+.ttl {
+    width: 100%;
+    height: 1.1rem;
+    color: #0BAABB;
+    font-size: .8rem;
+    font-weight: 600;
+    padding-top: 2px;
+    letter-spacing: 1.4px;
+}
+
+.ip {
+    height: 22px;
+    width: 100%;
+    margin-top: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #657070;
+    cursor: pointer;
+}
+
+.ip::placeholder {
+    color: #65707066;
+}
+
+.main-btn {
+    height: 2.7rem;
+    width: 12rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #0BAABB;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.main-btn:hover {
+    background-color: #0c808d;
+    color: #fff;
+}
+
+@keyframes formAni {
+    from {
+        transform: translateY(-10rem);
+        opacity: 0;
+        scale: .7;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        scale: 1;
+    }
+}
